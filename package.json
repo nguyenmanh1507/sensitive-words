@@ -1,0 +1,45 @@
+{
+  "name": "nm-sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "flow"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenmanh1507/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "nguyenmanh1507",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenmanh1507/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/nguyenmanh1507/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-latest": "^6.24.0",
+    "flow-bin": "^0.42.0",
+    "jest": "^19.0.2",
+    "np": "^2.13.1",
+    "watch": "^1.0.2"
+  }
+}
